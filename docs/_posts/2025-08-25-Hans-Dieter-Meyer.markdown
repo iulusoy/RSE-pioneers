@@ -47,7 +47,6 @@ Professor Meyer shares insights about the evolution of scientific computing from
 - The importance of documentation and community support
 - Evolution of computational methods and hardware
 
-{% include figure image_path="/assets/images/mctdh-workflow.png" alt="MCTDH Workflow Diagram" caption="The MCTDH method workflow showing the multi-configuration approach to quantum dynamics." %}
 
 ## About Professor Meyer
 
@@ -68,7 +67,13 @@ Professor Hans-Dieter Meyer developed the Multi-Configuration Time-Dependent Har
 
 ### Related Images
 
-{% include gallery id="meyer_gallery" caption="Images from Professor Meyer's career and the MCTDH project." %}
+<div class="gallery">
+  <div class="gallery-item">
+    <img src="/01-Dieter-Meyer/dieter.jpg" alt="Professor Hans-Dieter Meyer" title="Professor Hans-Dieter Meyer">
+  </div>
+</div>
+
+*Images from Professor Meyer's career and the MCTDH project.*
 
 ---
 
