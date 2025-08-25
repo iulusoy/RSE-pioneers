@@ -28,7 +28,7 @@ feature_row:
   - image_path: /assets/images/RSE-pioneer.png
     alt: "About the Project"
     title: "About RSE Pioneers"
-    excerpt: "Learn more about our mission to preserve RSE history and knowledge."
+    excerpt: "Learn more about the RSE pioneers project."
     url: "/about/"
     btn_class: "btn--primary"
     btn_label: "Learn More"
