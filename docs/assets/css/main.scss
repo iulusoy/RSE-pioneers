@@ -1,0 +1,102 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+
+@charset "utf-8";
+
+// Define custom color
+$primary-color: #0d2476ff;
+$link-color: #0d2476ff;
+$link-color-hover: mix(#000, $link-color, 25%);
+$link-color-visited: mix(#fff, $link-color, 25%);
+
+// Override button colors
+$btn-primary-color: #fff !default;
+$btn-primary-background-color: #0d2476ff !default;
+$btn-primary-border-color: #0d2476ff !default;
+
+// Import theme
+@import "minimal-mistakes";
+
+// Custom overrides
+.btn--primary {
+  background-color: #0d2476ff !important;
+  border-color: #0d2476ff !important;
+  color: #fff !important;
+  
+  &:hover {
+    background-color: darken(#0d2476ff, 10%) !important;
+    border-color: darken(#0d2476ff, 10%) !important;
+  }
+}
+
+.page__hero--overlay {
+  .page__title,
+  .page__meta,
+  .page__lead,
+  .btn {
+    color: #fff;
+  }
+}
+
+// Navigation colors
+.masthead {
+  .site-title {
+    color: #0d2476ff;
+  }
+  
+  .greedy-nav a {
+    color: #0d2476ff;
+    
+    &:hover {
+      color: darken(#0d2476ff, 15%);
+    }
+  }
+}
+
+// Link colors
+a {
+  color: #0d2476ff;
+  
+  &:hover {
+    color: darken(#0d2476ff, 15%);
+  }
+}
+
+// Archive item hover
+.archive__item:hover {
+  .archive__item-title {
+    color: #0d2476ff;
+  }
+}
+
+// Post meta colors
+.page__meta {
+  a {
+    color: #0d2476ff;
+  }
+}
+
+// Social icons in footer
+.page__footer {
+  .social-icons {
+    a {
+      color: #0d2476ff;
+      
+      &:hover {
+        color: darken(#0d2476ff, 15%);
+      }
+    }
+  }
+}
+
+// Author profile colors
+.author__urls {
+  a {
+    color: #0d2476ff;
+    
+    &:hover {
+      color: darken(#0d2476ff, 15%);
+    }
+  }
+}
