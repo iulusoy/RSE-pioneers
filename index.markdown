@@ -34,6 +34,26 @@ feature_row:
     btn_label: "Learn More"
 ---
 
+<style>
+.feature__item .archive__item-teaser {
+  max-height: 200px;
+  object-fit: cover;
+}
+.feature__item .archive__item-teaser img {
+  max-height: 200px;
+  width: auto;
+}
+.btn--primary {
+  background-color: #0d2476ff !important;
+  border-color: #0d2476ff !important;
+  color: #fff !important;
+}
+.btn--primary:hover {
+  background-color: #092155 !important;
+  border-color: #092155 !important;
+}
+</style>
+
 {% include feature_row %}
 
 ## About the Project
