@@ -25,7 +25,7 @@ Our featured pioneers are researchers who:
 - Built communities around their software
 - Influenced how research software is developed and maintained today
 
-## About This Project
+## Topics covered
 
 This project was initiated to capture the stories and wisdom of these early RSE pioneers. The interviews aim to provide insights into:
 - The evolution of computational research

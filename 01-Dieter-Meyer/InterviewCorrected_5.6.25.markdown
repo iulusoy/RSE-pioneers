@@ -1,15 +1,20 @@
- # Interview Hans-Dieter Meyer 
- 
- ## 8\. Mai 2025, 10:00 Uhr \- Transkript (German) 
+---
+layout: single
+title: Interview Transkript Hans-Dieter Meyer (German)
+permalink: /interview-hans-dieter-meyer-de/
+---
 
-Abkürzungen:  
-RSE \- Research Software Engineering  
-MCTDH \- Multi-Configuration time-dependent Hartree  
-ML \- Multilayer  
-CAP \- Complex Absorbing Potential  
-CPD \- Canonical Polyadic Decomposition  
-DFG \- Deutsche Forschungsgemeinschaft  
-DMRG \- Density Matrix Renormalization Group
+<div style="display: flex; gap: 1.5rem; margin: 1.5rem 0; flex-wrap: wrap;">
+  <div style="background-color: #0d2476ff; border: 1px solid #dee2e6; border-radius: 0.375rem; padding: 1rem; font-size: 0.875rem; color: #ffffffff; flex: 1; min-width: 300px;">
+    <strong>Interview Details:</strong>
+    <ul style="margin: 0.5rem 0 0 1rem; padding-left: 0;">
+      <li><strong>Date:</strong> May 8, 2025</li>
+      <li><strong>Duration:</strong> 60 minutes</li>
+      <li><strong>Language:</strong> German</li>
+      <li><strong>Location:</strong> Heidelberg</li>
+    </ul>
+  </div>
+</div>
 
 *Wir haben ja jetzt an der Uni Heidelberg das Scientific Software Center als eine Einrichtung, die Forschende mit Forschungssoftwareentwicklung unterstützt. Und dieser Begriff RSE oder Research Software Engineering ist ja auch jetzt erst in den letzten 15 Jahren so aufgekommen und ist aber eigentlich eine Sache, die es schon sehr lange gibt, weil es Forschung gibt, die mit der Erfindung der Computer überhaupt erst ermöglicht wurde und darauf basiert. Und da hast du ja wirklich sehr maßgeblich mit beigetragen, einmal durch die Entwicklung des Algorithmus von MCTDH und auch der Programmierung und Bereitstellung des Programms und Nutzbarmachung des Programms auch. Und deswegen kam diese Idee zu RSE Pioneers, weil du eben als Pionier vorangegangen bist und das alles ermöglicht hast und dadurch wirklich auch viel Forschung ermöglicht wurde. Und das ist ja der Slogan vom Software Sustainability Institute, Better Software Better Research. Und deswegen bin ich jetzt hier, dass wir uns ein bisschen darüber unterhalten können, wie es zu diesen Entwicklungen gekommen ist und was waren die maßgebliche Punkte, die alles beeinflusst haben und wie siehst du generell die Entwicklung von RSE und überhaupt auch in der Forschung die Nutzung von Softwarepaketen und so weiter. Also, da würde ich jetzt einfach mal mit ein paar Fragen anfangen.* 
 
@@ -116,17 +121,21 @@ Nein, wir werden weiter möglichst große Systeme studieren, so weit wir können
 Ja, schönen Dank für das Gespräch, es war schön. Dankeschön. Und hoffentlich trägst es dazu bei, weitere MCTDH-User anzulocken.   
 *Ja, bestimmt.*
 
-**Referenzen/Links**  
-MCTDH  
-TC Heidelberg  
-QUANTICS  
-HDQD  
-MCTDH summer school
-
-**Bilder**  
-Dieter  
-Pyrazin  
-MCTDH output  
-MCTDH “Schiff”
-
 [^1]: 	Die Behandlung von Modellen wie Spin-Boson, vibronic-coupling Hamiltonian, generalized Henon-Heiles etc. ist sehr viel einfacher. Pyrazin mit seinen 24 Freiheitsgraden konnten wir schon 1999 lösen und heutzutage sind Modelle mit mehreren 100 Feiheitsgraden lösbar.
+
+<div style="display: flex; gap: 1.5rem; margin: 1.5rem 0; flex-wrap: wrap;">
+  <div style="background-color: #0d2476ff; border: 1px solid #dee2e6; border-radius: 0.375rem; padding: 1rem; font-size: 0.875rem; color: #ffffffff; flex: 1; min-width: 300px;">
+    <strong>Abbreviations:</strong>
+    <ul style="margin: 0.5rem 0 0 1rem; padding-left: 0;">
+      <li><strong>RSE:</strong> Research Software Engineering</li>
+      <li><strong>MCTDH:</strong> Multi-Configuration time-dependent Hartree</li>
+      <li><strong>ML:</strong> Multilayer</li>
+      <li><strong>CAP:</strong> Complex Absorbing Potential</li>
+      <li><strong>CPD:</strong> Canonical Polyadic Decomposition</li>
+      <li><strong>DFG:</strong> Deutsche Forschungsgemeinschaft</li>
+      <li><strong>DMRG:</strong> Density Matrix Renormalization Group</li>
+    </ul>
+  </div>
+</div>
+
+---
