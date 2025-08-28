@@ -90,7 +90,7 @@ Nach Erreichen eines höheren Reifegrades der Software war die Freigabe der Soft
 <div style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 0.375rem; padding: 1rem; margin: 1rem 0; font-size: 0.9rem;">
 <strong>🎧 Diesen Abschnitt als Audio hören:</strong>
 <audio controls style="width: 100%; margin: 0.5rem 0 0 0;">
-  <source src="{{ '/assets/audio/part2_rse_practices.wav' | relative_url }}" type="audio/wav">
+  <source src="{{ '/assets/audio/part2_RSE_practices.wav' | relative_url }}" type="audio/wav">
   Your browser does not support the audio element.
 </audio>
 </div>
