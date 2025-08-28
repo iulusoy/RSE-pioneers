@@ -1,6 +1,7 @@
 ---
 title: "RSE pioneers - Pioniere des Forschungssoftware-Engineerings: Hans-Dieter Meyer"
 excerpt: "Quantum dynamics researcher and developer of the Heidelberg MCTDH software package."
+classes: wide
 date: 2025-08-25
 categories: interview
 tags: 
@@ -39,6 +40,63 @@ Hans-Dieter Meyer studierte Diplom-Physik in Göttingen und schloss seine Doktor
 Hans-Dieter Meyer ist der Hauptverantwortliche, Entwickler und langjähriger Maintainer der Open-Source Research Software “Heidelberg-MCTDH” (Multi-Configuration Time-Dependent Hartree). [MCTDH][MCTDH] ist ein hocheffizienter Algorithmus zur Lösung der zeitabhängigen Schrödingergleichung, und ist in Fortran geschrieben (verschiedene Fortran-Dialekte, hinzu kommen Teile in C und Python). Der Algorithmus ist in [mehreren Publikationen][mctdh-refs] und einem [Buch][MCTDH-book] beschrieben, und das Software-Paket, bestehend aus verschiedenen Programmen, wurde etwa 550-mal heruntergeladen. In der Quantendynamik-Community ist MCTDH berühmt für seine Effizienz und hohe Genauigkeit in der Lösung von Wellenpaket-Dynamik-Problemen. Es finden regelmäßig [Workshops und Lehrveranstaltungen zu MCTDH][MCTDH-summer-school] statt. Darüberhinaus entstand die ["High-Dimensional Quantum Dynamics" Konferenzreihe][HDQD-conferences], und es gibt weitere (variierte) Implementierungen des MCTDH Algorithmus in anderen Programmen (Uwe Manthe (Bielefeld), Graham Worth (University College London, [“Quantics”][Quantics]), Haobin Wang (Denver)). Die Publikationen, welche MCTDH vorgestellt haben, sind insgesamt über 5.000 Mal zitiert, die Heidelberg-MCTDH Homepage listet über 300 Publikationen unter Nutzung von MCTDH auf. MCTDH hat daher fundamental zu dem Bereich der Quantendynamik beigetragen und unzählige Forschungsprojekte und Forscherkarrieren geprägt. Ohne die Entwicklung des Algorithmus, aber insbesondere des Software-Paketes, welches den Algorithmus zugänglich gemacht hat, sowie der Betreuung der Nutzer, wäre die Forschungslandschaft um einiges ärmer, und [viele Einsichten hätten nicht gewonnen werden können][MCTDH-highlight]. 
 
 Hans-Dieter Meyer hat laut Google Scholar 358 Forschungsbeiträge veröffentlicht (ResearchGate: 316, Web of Science: 285), die 27.244-mal zitiert wurden (ResearchGate: 22.448, Web of Science: 19.739) (h-Index 75 (ResearchGate: h-Index 68, Web of Science: h-Index 64)).
+
+## Die Anfänge
+Hans-Dieter Meyer begann während seiner Doktorarbeit computergestützt zu forschen, damals noch auf Lochkarten und mit Hilfe kleiner Programme zur Datenauswertung, hauptsächlich in Fortran. Das Programmieren hat er sich selber beigebracht, "durchs Abgucken". Anfangs war das Programmieren und Debuggen von Programmen noch deutlich aufwändiger: Erst mit der Anschaffung der ersten Bildschirme und eigener Rechner in den Forschungsgruppen war es möglich, direkter zu Programmieren und Fehler sofort zu korrigieren. All dies war Teil der täglichen Arbeit und integraler Teil der eigenen Forschung.
+
+Anfang der 90er Jahre begann dann die Arbeit an MCTDH: Mit der Entwicklung der Methode und des Algorithmus. Diese bilden zwei Seiten des gleichen Inhaltes ab: Zum einen die mathematische Beschreibung, Näherung und mathematische Validierung des Ansatzes; zum anderen die numerische Repräsentation des Ansatzes (z.B. [Matrixdarstellung](https://doi.org/10.1007/BF01328531)), numerische Transformationen (z.B. [Matrix-Operationen](https://www.netlib.org/lapack/#_presentation)) und Algorithmen (z.B. [Integratoren zur Lösung partieller Differenzialgleichungen](https://numerical.recipes/)). Nach der initialen Implementation der Methode wurde das Programm erweitert und professionalisiert (Anheben des technologischen Reifegrads über den Prototyp hinaus).
+
+## Öffentlichstellung der Software zur allgemeinen Nutzung
+
+<div style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 0.375rem; padding: 1rem; margin: 1rem 0; font-size: 0.9rem;">
+<strong>🎧 Diesen Abschnitt als Audio hören:</strong>
+<audio controls style="width: 100%; margin: 0.5rem 0 0 0;">
+  <source src="/01-Dieter-Meyer/part1_open_source.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+</div>
+
+Nach Erreichen eines höheren Reifegrades der Software war die Freigabe der Software an die Öffentlichkeit ein großer Meilenstein:
+<audio controls style="width: 100%; margin: 0.5rem 0 1rem 0;">
+  <source src="/01-Dieter-Meyer/soundbyte1_open_source.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+
+<div style="padding: 1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>"Damals hatten wir auch noch nicht daran gedacht, das Programm öffentlich zu machen. Das kam erst später. Ich weiß gar nicht mehr genau wann, aber das muss auch Ende der 90er oder Anfang 2000 gewesen sein. Wir haben dann diskutiert, ob wir den MCTDH Code öffentlich machen sollen. Das war eine längere Diskussion, das war auch eine schwierige Entscheidung. [...] Aber es war natürlich die einzig richtige Entscheidung.</i>
+<div style="padding: 1rem; margin: 1rem -1rem; background-color: #0d2476ff; color: white; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>Nur dadurch, dass wir das Open Source gemacht haben und den anderen zugänglich gemacht haben und das Programm auch so geschrieben haben, dass es für Leute, die nicht so ganz tief drin sind, wirklich nutzbar ist, hat MCTDH die Verbreitung erfahren.</i> 
+</div>
+<i>Sonst wäre es ein kleines Ding nebenher gewesen. Es ist zu kompliziert. Man kann nicht einen Doktoranden sagen, mach das mal, das funktioniert nicht. Man muss einen längeren Atem haben. Den hat man nur, wenn man sich damit verbunden fühlt."</i>
+</div>
+
+**Frage:** Es ist oft das Sentiment unter den Forschenden, ich habe das geschrieben, das ist meins, ich möchte das nicht öffentlich machen, weil dann nutzen das andere und klauen mir die Ergebnisse. Was würdest du jemandem sagen, oder, was hat euch dazu bewogen, das dann doch freizugeben?
+<audio controls style="width: 100%; margin: 0.5rem 0 1rem 0;">
+  <source src="/01-Dieter-Meyer/soundbyte2_open_source2.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+
+<div style="padding: 1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>"Diese Bedenken hatten wir vielleicht auch, aber das ist altes Denken. Man sollte die Programme freigeben, damit sie nutzbar sind. Es macht ja keinen Sinn, dass jeder das Rad immer neu erfindet und ähnliche Programme schreibt. Das wird deutlich, wenn man an solche Bibliotheken wie LAPACK denkt. LAPACK ist wirklich eine wunderbare Sache. Sehr stark benutzt. Das haben Leute geschrieben, die haben sich die Mühe gemacht und werden jetzt acknowledged und ziert, aber wenn man das nicht freigegeben hätte, so dass nur die eigene Universität diese schönen Programme nutzen kann, das hätte ja nicht so viel Sinn gegeben. Ich glaube, da renne ich inzwischen offene Türen ein. Das war zu der Zeit, als wir uns in den 90er-Jahren entschieden haben, anders. Aber jetzt renne ich da offene Türen ein. Ich glaube, die Leute sehen ein, man sollte die Sachen öffentlich machen."</i> 
+</div>
+
+<script>
+document.addEventListener('DOMContentLoaded', function() {
+    const audioElements = document.querySelectorAll('audio');
+    
+    audioElements.forEach(function(audio) {
+        audio.addEventListener('play', function() {
+            // Pause all other audio elements when this one starts playing
+            audioElements.forEach(function(otherAudio) {
+                if (otherAudio !== audio) {
+                    otherAudio.pause();
+                }
+            });
+        });
+    });
+});
+</script>
+
 
 ## Audio Highlights
 
