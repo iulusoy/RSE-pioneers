@@ -51,15 +51,19 @@ Anfang der 90er Jahre begann dann die Arbeit an MCTDH: Mit der Entwicklung der M
 <div style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 0.375rem; padding: 1rem; margin: 1rem 0; font-size: 0.9rem;">
 <strong>🎧 Diesen Abschnitt als Audio hören:</strong>
 <audio controls style="width: 100%; margin: 0.5rem 0 0 0;">
-  <source src="/assets/audio/part1_open_source.wav" type="audio/wav">
+  <source src="{{ '/assets/audio/part1_open_source.wav' | relative_url }}" type="audio/wav">
   Your browser does not support the audio element.
 </audio>
 </div>
-[audio](/assets/audio/part1_open_source.wav)
+
+<audio controls style="width: 100%; margin: 0.5rem 0 1rem 0;">
+  <source src="https://github.com/iulusoy/RSE-pioneers/blob/main/assets/audio/part1_open_source.wav" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
 
 Nach Erreichen eines höheren Reifegrades der Software war die Freigabe der Software an die Öffentlichkeit ein großer Meilenstein:
 <audio controls style="width: 100%; margin: 0.5rem 0 1rem 0;">
-  <source src="/01-Dieter-Meyer/soundbyte1_open_source.wav" type="audio/wav">
+  <source src="{{ '/assets/audio/soundbyte1_open_source.wav' | relative_url }}" type="audio/wav">
   Your browser does not support the audio element.
 </audio>
 
@@ -73,7 +77,7 @@ Nach Erreichen eines höheren Reifegrades der Software war die Freigabe der Soft
 
 **Frage:** Es ist oft das Sentiment unter den Forschenden, ich habe das geschrieben, das ist meins, ich möchte das nicht öffentlich machen, weil dann nutzen das andere und klauen mir die Ergebnisse. Was würdest du jemandem sagen, oder, was hat euch dazu bewogen, das dann doch freizugeben?
 <audio controls style="width: 100%; margin: 0.5rem 0 1rem 0;">
-  <source src="/01-Dieter-Meyer/soundbyte2_open_source2.wav" type="audio/wav">
+  <source src="{{ '/assets/audio/soundbyte2_open_source2.wav' | relative_url }}" type="audio/wav">
   Your browser does not support the audio element.
 </audio>
 
@@ -86,7 +90,7 @@ Nach Erreichen eines höheren Reifegrades der Software war die Freigabe der Soft
 <div style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 0.375rem; padding: 1rem; margin: 1rem 0; font-size: 0.9rem;">
 <strong>🎧 Diesen Abschnitt als Audio hören:</strong>
 <audio controls style="width: 100%; margin: 0.5rem 0 0 0;">
-  <source src="/01-Dieter-Meyer/part2_rse_practices.wav" type="audio/wav">
+  <source src="{{ '/assets/audio/part2_rse_practices.wav' | relative_url }}" type="audio/wav">
   Your browser does not support the audio element.
 </audio>
 </div>
