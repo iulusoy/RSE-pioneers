@@ -57,6 +57,11 @@ toc_sticky: true
   background-color: #0d2476ff;
   color: white;
 }
+
+/* Hide header link symbol for main title (h1) */
+h1 .header-link {
+  display: none !important;
+}
 </style>
 
 Die computergestützte Forschung hat mittlerweile fast alle Fachbereiche ergriffen, und Forschende vor Herausforderungen in der Anwendung und der Entwicklung von Forschungssoftware gestellt. Mit der KI-Revolution steht bereits die nächste Welle an Umwälzungen bevor.
@@ -306,7 +311,14 @@ Ein anderer wichtiger Punkt, wiederum nicht direkt MCTDH aber für MCTDH sehr wi
 <i>HDM: "Ja, sehr viel beigetragen. Es gibt sehr viel in Fortran geschriebene Software. Und mit 90 und den höheren 2003 und was es jetzt gibt, ist Fortran auch sehr viel stärker geworden. Es ist sehr viel flexibler und kann viel mehr. Ich bin mit Fortran ganz glücklich. Aber das muss jeder selber entscheiden. Ich hänge vielleicht auch an der Tradition. Ich bin mit Fortran groß geworden. So ist es halt."</i></div>
 **IU:** Gibt es Pläne in der nahen Zukunft, außer der Summer School, mit MCTDH?
 <div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
-<i>HDM: "Nein, wir werden weiter möglichst große Systeme studieren, so weit wir können. Wir haben hier in der Gruppe von Oriol Vendrell eine gewisse Tradition, protonierte Wassercluster zu untersuchen. Der letzte und größte Wassercluster den wir untersucht haben ist das Extended Zundel Kation, das ist ein Zundel mit noch vier Wassern drumherum. Das sind 51 Freiheitsgrade. Das ist schon ziemlich groß. Und in dieser Richtung werden wir sicher weitergehen. Wir berechnen die Absorptionsspektren der Cluster. Das ist die Anwendung. Und von der Programmentwicklung, da sehe ich im Moment nichts, was spektakulär ist, aber das kann natürlich kommen. Wenn wir auf ein Problem stoßen für das wir eine neue zusätzliche Entwicklung brauen, dann würde man die auch leisten, so weit es möglich ist. Man ist ja immer problem-driven. Man bekommt ein Problem, man setzt sich ja nicht hin und denkt sich etwas Großartiges aus, sondern die Probleme kommen und man versucht sie zu lösen."</i></div>
+<i>HDM: "Nein, wir werden weiter möglichst große Systeme studieren, so weit wir können. Wir haben hier in der Gruppe von Oriol Vendrell eine gewisse Tradition, protonierte Wassercluster zu untersuchen. Der letzte und größte Wassercluster den wir untersucht haben ist das Extended Zundel Kation, das ist ein Zundel mit noch vier Wassern drumherum. Das sind 51 Freiheitsgrade. Das ist schon ziemlich groß. Und in dieser Richtung werden wir sicher weitergehen. Wir berechnen die Absorptionsspektren der Cluster. Das ist die Anwendung. Und von der Programmentwicklung, da sehe ich im Moment nichts, was spektakulär ist, aber das kann natürlich kommen. </i>
+<div style="padding: 0.5rem; margin-top: 0rem; background-color: #0d2476ff; color: white; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>Wenn wir auf ein Problem stoßen für das wir eine neue zusätzliche Entwicklung brauchen, dann würde man die auch leisten, so weit es möglich ist. Man ist ja immer problem-driven. Man bekommt ein Problem, man setzt sich ja nicht hin und denkt sich etwas Großartiges aus, sondern die Probleme kommen und man versucht sie zu lösen."</i></div>
+<audio controls style="width: 100%; margin: 0.5rem 0 0 0;">
+  <source src="{{ '/assets/audio/soundbyte7_motivation.wav' | relative_url }}" type="audio/wav">
+  Your browser does not support the audio element.
+</audio>
+</div>
 **IU:** Ja, dann bedanke ich mich bei dir.
 <div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
 <i>HDM: "Ja, schönen Dank für das Gespräch, es war schön. Dankeschön. Und hoffentlich trägst es dazu bei, weitere MCTDH-User anzulocken."</i></div>
