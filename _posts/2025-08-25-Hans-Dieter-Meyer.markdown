@@ -1,7 +1,6 @@
 ---
 title: "RSE pioneers - Pioniere des Forschungssoftware-Engineerings: Hans-Dieter Meyer"
 excerpt: "Quantum dynamics researcher and developer of the Heidelberg MCTDH software package."
-classes: wide
 date: 2025-08-25
 categories: interview
 tags: 
@@ -26,7 +25,39 @@ meyer_gallery:
     image_path: /assets/images/heidelberg-lab.jpg
     alt: "Theoretical Chemistry Lab at Heidelberg"
     title: "Theoretical Chemistry Lab at Heidelberg"
+toc: true
+toc_label: "Interview Abschnitte"
+toc_sticky: true
 ---
+
+<style>
+/* Custom styling for the Minimal Mistakes TOC */
+.toc {
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+}
+
+.toc .nav__title {
+  color: #0d2476ff !important;
+  background-color: transparent;
+  font-weight: bold;
+}
+
+.toc .nav__list a {
+  color: #333;
+  transition: background-color 0.2s;
+}
+
+.toc .nav__list a:hover {
+  background-color: #0d2476ff;
+  color: white;
+}
+
+.toc .nav__list .active a {
+  background-color: #0d2476ff;
+  color: white;
+}
+</style>
 
 Die computergestützte Forschung hat mittlerweile fast alle Fachbereiche ergriffen, und Forschende vor Herausforderungen in der Anwendung und der Entwicklung von Forschungssoftware gestellt. Mit der KI-Revolution steht bereits die nächste Welle an Umwälzungen bevor.
 Einige Fachbereiche hat die Digitalisierung des Forachungsprozesses in den letzten 20 Jahren jedoch wenig verändert: Insbesondere die Fachbereiche, die schon immer computergestützt geforscht haben. So zum Beispiel in der theoretischen Chemie: Hier haben Wissenschaftler "schon immer" (seit den 1970er Jahren) Computerprogramme entwickeln und in der Forschung zum Einsatz gebracht, mit allem was dazu gehört - z.B. dem Erlernen von Programmiersprachen, Compilern und Profilern. So entstanden über die Jahre hinweg einige große Programmpackete wie [GAMESS](https://www.ameslab.gov/gamess-open-source-quantum-chemistry-software), [Gaussian](https://gaussian.com/), [Molpro](https://www.molpro.net/), und [andere](https://en.wikipedia.org/wiki/Category:Computational_chemistry_software) - fundamentale Bausteine für die Forschung und Forschungsinfrastrukturen, ohne die viele Erkenntnisse nicht möglich gewesen wären.
@@ -281,13 +312,29 @@ Ein anderer wichtiger Punkt, wiederum nicht direkt MCTDH aber für MCTDH sehr wi
 <i>HDM: "Ja, schönen Dank für das Gespräch, es war schön. Dankeschön. Und hoffentlich trägst es dazu bei, weitere MCTDH-User anzulocken."</i></div>
 **IU:** Ja, bestimmt.
 
-<!-- <script>
+<script>
+// Enhance heading anchor links
 document.addEventListener('DOMContentLoaded', function() {
+    // Add anchor links to all headings
+    const headings = document.querySelectorAll('h1, h2, h3, h4, h5, h6');
+    
+    headings.forEach(function(heading) {
+        // Create anchor link if heading has an id
+        if (heading.id) {
+            const link = document.createElement('a');
+            link.className = 'header-link';
+            link.href = '#' + heading.id;
+            link.innerHTML = '🔗';
+            link.title = 'Link to this section';
+            heading.appendChild(link);
+        }
+    });
+    
+    // Audio controls - pause other audio when one starts playing
     const audioElements = document.querySelectorAll('audio');
     
     audioElements.forEach(function(audio) {
         audio.addEventListener('play', function() {
-            // Pause all other audio elements when this one starts playing
             audioElements.forEach(function(otherAudio) {
                 if (otherAudio !== audio) {
                     otherAudio.pause();
@@ -295,8 +342,22 @@ document.addEventListener('DOMContentLoaded', function() {
             });
         });
     });
+    
+    // Smooth scrolling for anchor links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+        anchor.addEventListener('click', function (e) {
+            e.preventDefault();
+            const target = document.querySelector(this.getAttribute('href'));
+            if (target) {
+                target.scrollIntoView({
+                    behavior: 'smooth',
+                    block: 'start'
+                });
+            }
+        });
+    });
 });
-</script> -->
+</script>
 
 ## Key Topics Covered
 
