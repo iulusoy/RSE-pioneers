@@ -15,10 +15,6 @@ plugins:
 # Minimal Mistakes theme settings
 minimal_mistakes_skin: "air" # "air", "aqua", "contrast", "dark", "dirt", "neon", "mint", "plum", "sunrise"
 
-# Custom theme colors
-sass:
-  sass_dir: _sass
-  style: compressed
 
 # Site Footer
 footer:
