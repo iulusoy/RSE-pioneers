@@ -2,6 +2,7 @@
 title: "RSE pioneers - Pioniere des Forschungssoftware-Engineerings: Hans-Dieter Meyer"
 excerpt: "Quantum dynamics researcher and developer of the Heidelberg MCTDH software package."
 date: 2025-08-25
+author: Inga Ulusoy
 categories: interview
 tags: 
   - theoretical-chemistry
@@ -488,7 +489,7 @@ document.addEventListener('DOMContentLoaded', function() {
 ## Full Interview Resources
 
 ### Complete Transcript
-**[Read Full Interview Transcript](/interview-hans-dieter-meyer-de)**
+**[Read Full Interview Transcript](/interview-hd-meyer-full/)**
 
 ### Audio Interview
 

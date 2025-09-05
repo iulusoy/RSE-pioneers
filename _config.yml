@@ -51,7 +51,6 @@ author:
 include:
   - .htaccess
   - _pages
-  - 01-Dieter-Meyer
 
 # Archives
 category_archive:

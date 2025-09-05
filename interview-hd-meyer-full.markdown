@@ -1,7 +1,7 @@
 ---
 layout: single
 title: Interview Transkript Hans-Dieter Meyer (German)
-permalink: /interview-hans-dieter-meyer-de/
+author: Inga Ulusoy
 ---
 
 <div style="display: flex; gap: 1.5rem; margin: 1.5rem 0; flex-wrap: wrap;">

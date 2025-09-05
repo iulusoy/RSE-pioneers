@@ -1,0 +1,16 @@
+# /_data/authors.yml
+
+Inga Ulusoy:
+  name        : "Inga Ulusoy"
+  bio         : "Research Software Engineer at University of Heidelberg."
+  avatar      : "/assets/images/RSE-pioneer.png"
+  links:
+    - label: "Email"
+      icon: "fas fa-fw fa-envelope-square"
+      url: "mailto:inga.ulusoy@uni-heidelberg.de"
+    - label: "Website"
+      icon: "fas fa-fw fa-link"
+      url: "https://www.ssc.uni-heidelberg.de/en"
+    - label: "LinkedIn"
+      icon: "fab fa-fw fa-linkedin"
+      url: "https://www.linkedin.com/in/inga-ulusoy-54298943/"
