@@ -11,7 +11,7 @@ header:
 excerpt: >
   How did the first RSEs advance science, and what factors determined success, adoption and impact of research software? These are central questions that RSE pioneers addresses.
 feature_row:
-  - image_path: /01-Dieter-Meyer/dieter.jpg
+  - image_path: /assets/images/dieter.jpg
     alt: "Hans-Dieter Meyer"
     title: "Featured Interview: Hans-Dieter Meyer"
     excerpt: "Quantum dynamics researcher and developer of the Heidelberg MCTDH software package."
