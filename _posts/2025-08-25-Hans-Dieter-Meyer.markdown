@@ -65,6 +65,45 @@ toc_sticky: true
     padding-left: 1rem !important;
   }
 }
+
+/* Prevent column layout switch at 1600px and above */
+@media (min-width: 1600px) {
+  .layout--single .page__container,
+  .layout--single .page,
+  .page__container,
+  .page {
+    max-width: 1400px !important;
+    width: calc(100% - 300px) !important;
+    margin-left: 280px !important;
+    margin-right: auto !important;
+    padding-left: 1rem !important;
+    padding-right: 1rem !important;
+  }
+  
+  /* Keep sidebar on the left - positioned to not block content */
+  .sidebar {
+    position: absolute !important;
+    left: auto !important;
+    top: auto !important;
+    width: 250px !important;
+    max-width: 250px !important;
+    margin-left: 0 !important;
+    padding-left: 0.5rem !important;
+    z-index: 1 !important;
+  }
+  
+  /* Keep TOC on the right side */
+  .toc {
+    position: sticky !important;
+    top: 2rem !important;
+    left: auto !important;
+    right: 1rem !important;
+    width: 200px !important;
+    max-width: 200px !important;
+    margin-left: auto !important;
+    z-index: 5 !important;
+  }
+}
 /* Custom styling for the Minimal Mistakes TOC */
 .toc {
   background-color: #f8f9fa;
