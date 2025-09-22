@@ -22,7 +22,7 @@ feature_row:
     alt: "Audio Highlights"
     title: "Audio Highlights"
     excerpt: "Listen to key moments from our interviews with RSE pioneers."
-    url: "/audio/"
+    url: "/soundbytes/"
     btn_class: "btn--primary"
     btn_label: "Listen Now"
   - image_path: /assets/images/RSE-pioneer.png
