@@ -607,8 +607,8 @@ document.addEventListener('DOMContentLoaded', function() {
   </div>
   
   <div class="audio-links">
-    <a href="https://www.buzzsprout.com/2531619/episodes/17727894" target="_blank" rel="noopener noreferrer" class="audio-button">
-      🎧 Listen on Buzzsprout
+    <a href="https://shows.acast.com/rse-pioneers/episodes/68d0ff2f146cfd1a6552805e" target="_blank" rel="noopener noreferrer" class="audio-button">
+      🎧 Listen on Acast
     </a>
   </div>
   

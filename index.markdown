@@ -7,7 +7,7 @@ header:
   overlay_filter: 0.3
   actions:
     - label: "<i class='fas fa-play'></i> Listen to Interviews"
-      url: "https://www.buzzsprout.com/2531619/episodes/17727894"
+      url: "https://shows.acast.com/rse-pioneers"
 excerpt: >
   How did the first RSEs advance science, and what factors determined success, adoption and impact of research software? These are central questions that RSE pioneers addresses.
 feature_row:

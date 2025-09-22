@@ -24,7 +24,7 @@ footer:
       url: "https://github.com/iulusoy/RSE-pioneers"
     - label: "Podcast"
       icon: "fas fa-fw fa-podcast"
-      url: "https://www.buzzsprout.com/2531619"
+      url: "https://shows.acast.com/rse-pioneers"
 
 # Site Author
 author:
@@ -43,9 +43,9 @@ author:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/iulusoy"
-    - label: "Buzzsprout Podcast"
+    - label: "Acast Podcast"
       icon: "fas fa-fw fa-podcast"
-      url: "https://www.buzzsprout.com/2531619"
+      url: "https://shows.acast.com/rse-pioneers"
 
 # Reading Files
 include:
