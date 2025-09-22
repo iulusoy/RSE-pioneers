@@ -201,20 +201,18 @@ Our featured pioneers are researchers who:
 <div style="padding: 0.5rem; margin-top: 0rem; background-color: #0d2476ff; color: white; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
 <i> Auch wenn einem durch das MCTDH-Projekt die Programmierung abgenommen worden ist, die intellektuelle Leistung, sich damit zu beschäftigen, die kann einem niemand abnehmen. Die muss man dann bringen."</i></div>
 <audio controls style="width: 100%; margin: 0.5rem 0 0 0;">
-  <source src="{{ '/assets/audio/soundbyte6_understanding.wav' | relative_url }}" type="audio/wav">
+  <source src="{{ '/assets/audio/soundbyte6_understanding.mp3' | relative_url }}" type="audio/wav">
   Your browser does not support the audio element.
 </audio>
-</div>
 
 ### Outlook
 
 <div style="padding: 0.5rem; margin-top: 0rem; background-color: #0d2476ff; color: white; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
 <i>Wenn wir auf ein Problem stoßen für das wir eine neue zusätzliche Entwicklung brauchen, dann würde man die auch leisten, so weit es möglich ist. Man ist ja immer problem-driven. Man bekommt ein Problem, man setzt sich ja nicht hin und denkt sich etwas Großartiges aus, sondern die Probleme kommen und man versucht sie zu lösen."</i></div>
 <audio controls style="width: 100%; margin: 0.5rem 0 0 0;">
-  <source src="{{ '/assets/audio/soundbyte7_motivation.wav' | relative_url }}" type="audio/wav">
+  <source src="{{ '/assets/audio/soundbyte7_motivation.mp3' | relative_url }}" type="audio/wav">
   Your browser does not support the audio element.
 </audio>
-</div>
 ---
 
 

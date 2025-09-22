@@ -14,3 +14,6 @@ Inga Ulusoy:
     - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/inga-ulusoy-54298943/"
+    - label: "Acast Podcast"
+      icon: "fas fa-fw fa-podcast"
+      url: "https://shows.acast.com/rse-pioneers"
