@@ -277,16 +277,11 @@ h1 .header-link {
 {% endif %}
 
 <!-- Replace the existing div with the English link -->
-<div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border: 2px solid #0d2476ff; border-radius: 12px; padding: 25px; margin: 25px 0; box-shadow: 0 4px 15px rgba(13, 36, 118, 0.15); text-align: center;">
-  <h4 style="color: #0d2476ff; margin-top: 0; margin-bottom: 15px; font-size: 1.2em;">🌐 English Version Available</h4>
-  <p style="margin: 8px 0; color: #495057;">Read this interview in English</p>
-  
   <div style="margin: 20px 0;">
     <a href="/interview/2025/08/25/Hans-Dieter-Meyer-en" class="audio-button" style="display: inline-block; background: #0d2476ff; color: white !important; padding: 12px 24px; text-decoration: none !important; border-radius: 8px; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(13, 36, 118, 0.3);">
       🇬🇧 Read English Interview
     </a>
   </div>
-</div>
 
 Die computergestützte Forschung hat mittlerweile fast alle Fachbereiche ergriffen, und Forschende vor Herausforderungen in der Anwendung und der Entwicklung von Forschungssoftware gestellt. Mit der KI-Revolution steht bereits die nächste Welle an Umwälzungen bevor.
 Einige Fachbereiche sind von der Digitalisierung des Forschungsprozesses weniger stark beeinflußt worden: Insbesondere die Fachbereiche, die bereits computergestützt geforscht haben. So zum Beispiel in der theoretischen Chemie: Hier haben Wissenschaftler "schon immer" Computerprogramme entwickelt und in der Forschung zum Einsatz gebracht, mit allem was dazu gehört - z.B. dem Erlernen von Programmiersprachen, Compilern und Profilern. So entstanden über die Jahre hinweg viele große Programmpackete wie [GAMESS](https://www.ameslab.gov/gamess-open-source-quantum-chemistry-software), [Gaussian](https://gaussian.com/), [Molpro](https://www.molpro.net/), und [andere](https://en.wikipedia.org/wiki/Category:Computational_chemistry_software) - fundamentale Bausteine für die Forschung, ohne die viele Erkenntnisse nicht möglich gewesen wären.
