@@ -498,7 +498,7 @@ Hier ist die Übersetzung des Textes in Englisch:
 **MCTDH Contributors**: Marie-Catherine Heitz, Stephan Wefing, Uwe Manthe, Suren Sukiasyan, Andreas Raab, Masahiro Ehara, Christoph Cattarius, Fabien Gatti, Frank Otto, Mathias Nest, Michael R. Brill, Oriol Vendrell, Markus Schröder, Daniel Pelaez-Ruiz, Phillip S. Thomas, Ying-Chih Chiang, Keyvan Sadri, David Mendive-Tapia
 
 ### Related links
-Es finden regelmäßig [Workshops und Lehrveranstaltungen zu MCTDH][MCTDH-summer-school] statt. Darüberhinaus entstand die ["High-Dimensional Quantum Dynamics" Konferenzreihe][HDQD-conferences], und es gibt weitere (variierte) Implementierungen des MCTDH Algorithmus in anderen Programmen (Uwe Manthe (Bielefeld), Graham Worth (University College London, [“Quantics”][Quantics]), Haobin Wang (Denver)). 
+Regular [workshops and lectures on MCTDH][MCTDH summer school] take place. In addition, the ["High-Dimensional Quantum Dynamics" conference series][HDQD conferences] has emerged, and there are other (varied) implementations of the MCTDH algorithm in other programs (Uwe Manthe (Bielefeld), Graham Worth (University College London, ["Quantics"][Quantics]), Haobin Wang (Denver)).
 
 - [**MCTDH**: "The Heidelberg MCTDH program package" - http://mctdh.uni-hd.de/][MCTDH]
 - [**MCTDH references**: "References for the Heidelberg MCTDH program package" http://mctdh.uni-hd.de/][MCTDH-refs]
