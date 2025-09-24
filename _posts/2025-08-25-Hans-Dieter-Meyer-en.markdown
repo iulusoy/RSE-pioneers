@@ -1,5 +1,5 @@
 ---
-title: "RSE pioneers - Research Software Engineering Pioneers: Hans-Dieter Meyer"
+title: "RSE pioneers: Hans-Dieter Meyer"
 excerpt: "Quantum dynamics researcher and developer of the Heidelberg MCTDH software package."
 date: 2025-08-25
 author: Inga Ulusoy
@@ -10,8 +10,6 @@ tags:
   - MCTDH
   - research-software
   - open-source
-lang: en
-permalink: /interview/2025/08/25/Hans-Dieter-Meyer-en.html
 header:
   overlay_filter: 0.5
   overlay_color: "#0d2476ff"
@@ -241,188 +239,222 @@ h1 .header-link {
 }
 </style>
 
+<!-- Place this after the front matter and before your main content -->
+
+{% if page.categories or page.tags %}
+<div class="mm-labels" style="margin-bottom: 1.5rem;">
+  {% if page.categories %}
+    <span class="mm-label mm-category" style="background:#0d2476ff; color:#fff; border-radius:4px; padding:2px 8px; margin-right:8px;">
+      {{ page.categories | join: ', ' }}
+    </span>
+  {% endif %}
+  {% if page.tags %}
+    {% for tag in page.tags %}
+      <span class="mm-label mm-tag" style="background:#e9ecef; color:#0d2476ff; border-radius:4px; padding:2px 8px; margin-right:4px;">
+        {{ tag }}
+      </span>
+    {% endfor %}
+  {% endif %}
+</div>
+{% endif %}
+
+<!-- Replace the existing div with the English link -->
+<div style="background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%); border: 2px solid #0d2476ff; border-radius: 12px; padding: 25px; margin: 25px 0; box-shadow: 0 4px 15px rgba(13, 36, 118, 0.15); text-align: center;">
+  <h4 style="color: #0d2476ff; margin-top: 0; margin-bottom: 15px; font-size: 1.2em;">🌐 German Version Available</h4>
+  <p style="margin: 8px 0; color: #495057;">Read this interview in German (original language)</p>
+  
+  <div style="margin: 20px 0;">
+    <a href="/interview/2025/08/25/Hans-Dieter-Meyer" class="audio-button" style="display: inline-block; background: #0d2476ff; color: white !important; padding: 12px 24px; text-decoration: none !important; border-radius: 8px; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(13, 36, 118, 0.3);">
+      🇩🇪 Read German Interview
+    </a>
+  </div>
+</div>
+
 Computer-assisted research has now reached almost all disciplines, challenging researchers in the application and development of research software. With the AI revolution, the next wave of upheaval is already on the horizon.
 
-Some disciplines, however, have been little changed by the digitization of the research process in the past 20 years: particularly those that have "always" (since the 1970s) conducted computer-assisted research. Theoretical chemistry is one such example: here, scientists have "always" developed computer programs and used them in research, with everything that entails - learning programming languages, compilers, and profilers. Over the years, this has led to the creation of several large software packages like [GAMESS](https://www.ameslab.gov/gamess-open-source-quantum-chemistry-software), [Gaussian](https://gaussian.com/), [Molpro](https://www.molpro.net/), and [others](https://en.wikipedia.org/wiki/Category:Computational_chemistry_software) - fundamental building blocks for research and research infrastructures, without which many insights would not have been possible.
+Some disciplines, however, have been little changed by the digitization of the research process in the past 20 years: particularly those that already have conducted computer-assisted research. Theoretical chemistry is one such example: here, scientists have "always" developed computer programs and used them in research, with everything that entails - learning programming languages, compilers, and profilers. Over the years, this has led to the creation of several large software packages like [GAMESS](https://www.ameslab.gov/gamess-open-source-quantum-chemistry-software), [Gaussian](https://gaussian.com/), [Molpro](https://www.molpro.net/), and [others](https://en.wikipedia.org/wiki/Category:Computational_chemistry_software) - fundamental building blocks for research and research infrastructures, without which many insights would not have been possible.
 
-How did these first RSEs advance research, what factors influenced the success and spread of research software? What are the differences between today and back then? RSE Pioneers addresses these questions.
+How did these first RSEs advance research, what factors influenced the success and adaptation of research software? What are the differences between today and back then? RSE Pioneers addresses these questions.
 
-<div class="interview-details">
-  <h3>Interview Details</h3>
-  <p><strong>Interviewee:</strong> Prof. Dr. Hans-Dieter Meyer, Heidelberg University</p>
-  <p><strong>Interviewer:</strong> Inga Ulusoy, Scientific Software Center, Heidelberg University</p>
-  <p><strong>Date:</strong> May 8, 2025</p>
-  <p><strong>Duration:</strong> 60 minutes</p>
-  <p><strong>Language:</strong> German (with English summary)</p>
-  <p><strong>Topic:</strong> Development and open-source release of the MCTDH (Multi-Configuration Time-Dependent Hartree) software package</p>
+## About the person
+
+Hans-Dieter Meyer studied physics in Göttingen and completed his doctoral thesis at the University of Göttingen under J.P. Toennies in 1978 on the topic of “Formation of dimers in rare gas beams from nozzles.” He then went to the University of California, Berkeley, USA, as a DFG-funded postdoc, where he continued to work on the simulation of scattering processes under W. H. (Bill) Miller. After his stay in Berkeley, Dieter first returned to Göttingen and then joined the Chair of Theoretical Chemistry at the University of Heidelberg (Lorenz Cederbaum's group) in 1980. In 1991, Dieter habilitated on the topic of “Stationary and time-dependent treatment of molecular scattering processes” and has been an adjunct professor at the University of Heidelberg since 2005.
+
+Hans-Dieter Meyer is the main developer and long-time maintainer of the open-source research software “Heidelberg-MCTDH” (Multi-Configuration Time-Dependent Hartree). [MCTDH][MCTDH] is a highly efficient algorithm for solving the time-dependent Schrödinger equation and is written in Fortran (various Fortran dialects, with parts in C and Python). The algorithm is described in [several publications][mctdh-refs] and a [book][MCTDH-book], and the software package, consisting of various programs, has been downloaded about 550 times. In the quantum dynamics community, MCTDH is famous for its efficiency and high accuracy in solving wave packet dynamics problems. The publications that introduced MCTDH have been cited over 5,000 times in total, and the Heidelberg MCTDH homepage lists over 300 publications that use MCTDH. MCTDH has therefore made a fundamental contribution to research in quantum dynamics and has shaped research projects and research careers. Without the development of the algorithm, but especially the software package that made the algorithm accessible, as well as the support provided to users, the research landscape would be much poorer, and [many insights would not have been gained][MCTDH-highlight]. 
+
+According to Google Scholar, Hans-Dieter Meyer has published 358 research articles (ResearchGate: 316, Web of Science: 285), which have been cited 27,244 times (ResearchGate: 22,448, Web of Science: 19,739) (h-index 75 (ResearchGate: h-index 68, Web of Science: h-index 64)).
+
+## The beginnings
+Hans-Dieter Meyer began conducting computer-assisted research during his doctoral studies, at that time still using punch cards and small programs for data analysis, mainly in Fortran. He taught himself programming “by watching others.” In the beginning, programming and debugging programs was much more time-consuming: It was only with the purchase of the first monitors and computers for the research groups that it became possible to program more directly and correct errors immediately. All of this was part of everyday life and an integral part of the research itself.
+
+In the early 1990s, work on MCTDH began with the development of the method and the algorithm. These represent two sides of the same coin: on the one hand, the mathematical description, approximation, and verification of the approach; on the other hand, the numerical representation of the approach. Through implementation, the approach is both verified and validated by comparison with exactly solvable models and experimental data. After the initial implementation of the method, the program was expanded and professionalized (raising the technological maturity level beyond the prototype).
+
+## Release of the software for general use
+
+Once the software had reached a higher level of maturity, its release to the public was a major milestone:
+
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "At first, we hadn't thought about making the program public. That came later, I don't remember exactly when, in the late 90s or early 2000s. It was a long discussion and also a difficult decision. [...] But of course it was the only right decision."</i>
+<div style="padding: 0.5rem; margin-top: 0rem; background-color: #0d2476ff; color: white; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>It was only because we made it open source and accessible to others, and wrote the program in such a way that it is really usable for people who are not so deeply involved, that MCTDH has become so widespread.</i> 
+</div>
+<i>Otherwise, it would have been a minor side project. It's too complicated. You can't just tell a doctoral student to do it; that doesn't work. You have to have staying power. And you only have that if you feel connected to it."</i>
 </div>
 
-## Introduction
+**IU:** Researchers often feel, “I wrote this, it's mine, I don't want to make it public because then others will use it and steal my results.” What would you say to someone, or what made you decide to release it after all?
 
-Professor Hans-Dieter Meyer has been working in theoretical chemistry at Heidelberg University since the 1980s. He is the principal developer of the MCTDH (Multi-Configuration Time-Dependent Hartree) software package, one of the most successful quantum dynamics programs worldwide.
-
-MCTDH revolutionized the calculation of quantum dynamics for molecular systems and made it possible to solve problems that were previously computationally intractable. The software has been cited thousands of times and is used by research groups worldwide.
-
-In this interview, Professor Meyer talks about the early days of research software development, the challenges of programming without modern tools, and the decision to make MCTDH open source.
-
-## Early Programming Experiences
-
-**Inga Ulusoy:** Could you tell us about your first experiences with programming?
-
-Professor Meyer began programming in the late 1970s during his doctoral studies. At that time, there were no integrated development environments, no internet, and no Stack Overflow. Everything had to be learned through books and trial and error.
-
-<div style="padding: 0.5rem; margin: 1rem 0; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4;">
-<i>"At that time, we programmed in Fortran, and you had to submit your programs on punch cards. You had to wait hours or even a day to get your results back. If there was an error, you had to start all over again."</i>
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "We may have had those concerns too, but that's old thinking. Programs should be released so that they can be used. It makes no sense for everyone to keep reinventing the wheel and writing similar programs. This becomes clear when you think of libraries such as LAPACK. These were written by people who put in a lot of effort and are now acknowledged and cited, but if they hadn't been released so that only their own university could use these wonderful programs, it wouldn't have made much sense. I think I'm preaching to the choir here. That was different back in the 1990s when we made our decision. I think people now realize that things should be made public."</i> 
 </div>
 
-This experience shaped his approach to programming: careful planning, thorough testing, and detailed documentation became essential skills.
+Hier ist die Übersetzung des Textes in Englisch:
 
-## Development of MCTDH
+## RSE Practices
 
-The development of MCTDH began in the late 1980s. The method was revolutionary because it made it possible to solve the time-dependent Schrödinger equation for complex molecular systems efficiently.
+**IU:** You've been following programming and software development over the years, and if you look back at different phases, how do you see the importance of programming and software development, for example, during your Ph.D., later when you released MCTDH, and now in research?
 
-<div style="padding: 0.5rem; margin: 1rem 0; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4;">
-<i>"The idea behind MCTDH was to represent the wave function as a product of time-dependent basis functions. This allowed us to reduce the exponential scaling problem that plagued other methods."</i>
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "It depends a bit on where and how you research. But for us, it was always essential. Theoretical chemistry is always very programming-intensive. The things that can be analytically solved have been solved by previous generations. We are very dependent on making it numerically. Either you have to write the programs yourself, which we did, or you use existing programs. This is much more common in quantum chemistry than in dynamics. We are promoting a trend that I don't like very much, where young Ph.D. students say, 'I'll just use the existing packages and compute with them and make nice results and write a paper, but I've never gotten my hands dirty with programming.' This is the other side, when you make it public, but that's just the way it is. Our field is very computer-intensive. You have to be able to work with computers, you should be able to program, and you should be able to develop programs."</i>
+<div style="padding: 0.5rem; margin-top: 0rem; background-color: #0d2476ff; color: white; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>It's just that you can solve larger systems. This is due to the fact that computers are becoming more powerful. This is enormous, what has happened in the last 20 years. But it's also due to the algorithms. The algorithms have become much better. You have to work on both, you can't just sit there and wait for the next generation of computers to be large enough to solve the problems. You have to develop and invent the algorithms, and there have been enormous contributions made. MCTDH has made a big contribution in this regard."</i>
+</div>
+<i>That we can now calculate the dynamics of molecules with 50 degrees of freedom or so quantum-mechanically, this would have been hard to imagine 20 years ago. This can be seen in the fact that certain formats in the output had to be expanded. When the program was written, we couldn't imagine that we would have over 100 degrees of freedom. We only printed two digits. We had maybe 5 degrees of freedom, later 12 or so, but that we would have over 100, this was beyond our imagination. We had to change the formats so that it wouldn't print stars. And things like this, this shows how big the progress is."</i>
 </div>
 
-### Technical Challenges
+**IU:** These two screws, algorithmically and hardware-wise, can be seen in MCTDH, just like in the step to ML-MCTDH. But also in the use of hardware.
 
-The development faced numerous technical challenges:
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "Parallelization, for example."</i></div>
 
-- **Memory limitations**: Early computers had very limited memory
-- **Computing power**: Calculations that now take minutes took days or weeks
-- **No version control**: Changes had to be tracked manually
-- **Limited collaboration tools**: Sharing code happened via physical media
+**IU:** Maybe the most important skills needed for programming have also changed with the hardware?
 
-<div style="display: flex; align-items: center; margin: 1rem 0;">
-<img src="{{ '/assets/images/zundel_molden.png' | relative_url }}" alt="The Zundel cation." style="width: 50%; height: auto; margin-right: 1rem;">
-<div style="flex: 1; font-style: italic; color: #666;">The Zundel cation, where a proton holds two water molecules together. There are large amplitude motions in a very anharmonic potential, and the kinetic operator is represented in a sum-of-products form with about 150 terms.</div>
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "I still learned programming in the old style, and I had to get used to not using too much memory, not reusing arrays after they were used. This is also very error-prone and should be avoided. Nowadays, memory is not a problem at all. The style of programming has changed completely. The programming span of Fortran 90 is different from Fortran 77, there have been many changes. This is also a problem for MCTDH, it's relatively old. There is still a lot of code written in Fortran 77. This is not changeable. This is a too large mass, it will remain. You have to see that you can combine it well and that everything works well."</i>
 </div>
+**IU:** Maybe readability becomes more important because more routines are reused.
 
-## Success and Recognition
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "Yes, exactly. More comments written in."</i></div>
+**IU:** You've also used version control and testing, and written documentation, for example. How did you come up with this?
 
-MCTDH achieved significant success in the scientific community. One of the breakthrough applications was the study of the Zundel cation, a system with 15 degrees of freedom that was far beyond what other methods could handle at the time.
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "At first, we just wild-programmed. We then introduced the first version control in '99. This was PRCS, I don't know if anyone knows it. Then it became too cumbersome and too old, and we introduced Subversion in 2010. Nowadays, many people use Git. But I'm happy with Subversion, with SVN, it can do everything I need. This was a very important step, that we could now track what was changed when. Especially because several people were working on it at the time."</i></div>
+**IU:** And the tests?
 
-<div style="padding: 0.5rem; margin: 1rem 0; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4;">
-<i>"The Zundel cation was a real breakthrough because it was a genuine molecule, not a model system. With 15 degrees of freedom, it was far better than what other people could do at the time. We could really analyze and solve it completely."</i>
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "We wrote a test routine. I think there are about 50 inputs that are processed. But it's actually too little. With the input variables, you can control MCTDH very finely. It's a very general program for solving the Schrödinger equation for distinguishable particles. You can do many different things with it. Therefore, there are always problems because people try things out that we never thought of and then get into trouble. Therefore, I learn a lot from the users. They send me an email, and then I see, we need to change this, we should change that. This is very nice. At the beginning, I had hoped that the users would contribute, maybe write some evaluation routine. But this has never happened."</i></div>
+**IU:** This can be seen in MCTDH, just like in the step to ML-MCTDH. But also in the use of hardware.
+
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "Yes, it's very easy to compile MCTDH on any possible hardware."</i></div>
+**IU:** Did you have a strategy to test it everywhere, or did this develop over time?
+
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "This developed over time. Linux is a wonderful thing. Linux runs on all computers. Thank goodness it also runs on Apple computers. It's not Linux, but a Unix system. You have to make some adjustments. If you have an Apple laptop, MCTDH also runs on it. If you have a Windows computer, you should install Linux if you want to use MCTDH. And on high-performance computers, Linux usually runs. Therefore, there was actually little to do. We always test everything with the GNU compilers."</i></div>
+**IU:** You've made MCTDH usable and put it under version control, etc., so you've applied best practices, although the term didn't exist yet. Have you ever discussed this publicly? Or was this a topic with other researchers or even within the group? That others said, why are you doing this? Or we don't want to do this?
+
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "We discussed it a lot at the beginning, before we did it. But after that, the decision was made. I can only recommend this to others. This is the only way that the work doesn't get lost. There is too much software that was written and then forgotten. You might want to use it, but the Ph.D. student who wrote it is no longer there. This is a point that I also want to emphasize."</i>
+<div style="padding: 0.5rem; margin-top: 0rem; background-color: #0d2476ff; color: white; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>If you want to make it public, you also have to write good documentation. And this is annoying, this doesn't make anyone very happy. Programming is often fun, but writing documentation is less fun. But this is incredibly important."</i>
 </div>
+<i>Especially when it becomes as complex as MCTDH. I look at the documentation myself because I've forgotten how the keyword is spelled to enable or disable a certain function. Good documentation is absolutely essential. I believe that much software is not usable because it is not well enough documented."</i></div>
+**IU:** And who started writing the documentation?
 
-This success led to widespread recognition and adoption of the MCTDH method in the theoretical chemistry community.
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "We write it all in HTML. And then we have written other things. There is a User's Guide that is written in LaTeX. And there is also a so-called Lab Session. This is a tutorial where you can try out different inputs and then learn to use MCTDH. But this is more of a guide to using and learning MCTDH. The HTML documentation is very helpful in daily work when you want to know exactly how the input should look like if you want to do something."</i></div>
 
-## The Decision to Go Open Source
+## Scientific Breakthroughs through MCTDH
 
-One of the most significant decisions in the MCTDH story was making the software freely available to the scientific community. This was not a common practice in the early days of scientific software.
+**IU:** Are there people who have influenced you in the development of research software? Were there any specific moments or turning points, people who helped you to follow a certain strategy, something like that?
 
-<div style="padding: 0.5rem; margin: 1rem 0; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4;">
-<i>"We decided to make MCTDH freely available because we wanted to enable as many researchers as possible to use the method. Science benefits when tools are accessible to everyone."</i>
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "I was lucky that Graham Worth joined our group relatively early, in '94. He had a lot of experience with programming, and we really profited from it. He made the whole thing a bit more professional. He was a postdoc here until the end of 2000. I'm grateful to him. And then there was Frank Otto, a Ph.D. student who had already programmed on an Atari or something as a student. He helped us with some things. When you have employees who can do more than you, it's very nice. And otherwise, from programming, Haobin Wang is to be mentioned, who developed ML (Multilayer). Not with us, in the United States. I was there in 2001 for a birthday party of Bill Miller. That's where I met Haobin Wang. And he had started developing Multilayer MCTDH. We discussed it a lot because we had similar ideas. We called it Cascading. But we never really did anything with it. It seemed too complex to us. And we said, if we start programming this and it doesn't work, then we'll be doing a lot of unnecessary work. But Haobin Wang just did it. And it worked wonderfully. And then we all followed suit. In this regard, he's my hero."</i></div>
+**IU:** And a turning point was the public release of MCTDH. But were there any other points where you changed direction?
+
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "Not really. ML, that's Multilayer MCTDH, is an important step forward for larger systems. The Heidelberg ML was mainly programmed by Oriol Vendrell. And we didn't have a big plan. The problems came up and we tried to solve them. We tried to make it better and better. [...] What was a strong and important development in the last few years was the rewriting of the general potential program into the so-called Sum-of-Products form. [...] You can bring the potential into a more compact form, the CPD form, also known as CANDECOMP or Parallel Factors. Markus Schröder made a huge contribution here, because now we have a program, MCCPD, Monte Carlo CPD, which brings general potential surfaces into the sum-of-products format. Quantum chemists provide programs to the scientific community, where you specify coordinates and they return the potential (Born-Oppenheimer) energy. That means they have generated a general fit, but we refit this on the sum-of-products form. The last thing we did in collaboration with Fabien Gatti and others was hydrogen on a graphite surface, and we included several graphite atoms that could move and transfer energy. And this was a big step, because it led to 75 degrees of freedom. And then refitting the surface with 75 degrees of freedom, this was something we couldn't have imagined a few years ago. [...]"</i></div>
+**IU:** This shows that you can't rely on computers getting better and just solving larger systems. The problem changes, the representation changes, and this must be represented.
+
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "You need the development of algorithms, that's for sure. And many algorithms are thought of beforehand. Only when the problem arises and becomes so large that it really bothers you, do you start thinking about new algorithms. In this regard, I'm also happy that MCTDH, which is now 35 years old, is still alive. I was always aware that someone would come up with a completely new idea and make it much better and more beautiful. But MCTDH has held up. Of course, because we've continued to develop it with ML and so on, which was an important step. But it's still a very good method and can still keep up and is still very much at the forefront."</i></div>
+
+## Development of Research Software in the Academic Environment
+
+**IU:** If you think about it now, this is the development of research software in the research landscape, and you mentioned that you had Ph.D. students who worked on it and so on. Where do you see critical points in the development of research software in the university environment?
+
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "A critical point is the financing. The DFG finances this not [Note: The DFG has taken a step in the direction of funding research software development.], but only scientific research, and if you want to do a bit of programming development, you can do it, but you can't write it into an application to develop a program or something like that."</i><small>[Note: A DFG application by Dieter was rejected for this reason].</small> <i>"This doesn't work. And this is different in England. Graham Worth received funding, specifically for program development. He then made a fork of the Heidelberg MCTDH, called QUANTICS, and he received funding specifically for this. This is missing in Germany. This was always a problem for me. You had to have a scientific project and you wanted to do programming development. We wanted to do applications, of course. We don't just develop software for the sake of it, but to do applications. But to get it into a DFG application, you have to write it the other way around. You have to write that the application is in the foreground and the development, which then happens alongside, but this is too important. And I hope that this will change a bit."</i></div>
+**IU:** And then you've practically worked on new question formulations and also taken on a bit of program maintenance?
+
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "Yes, of course. At the beginning, we started with H+H<sub>2</sub>-scattering and things like that. And we put these in the foreground and wrote nice papers about them. Over time, MCTDH developed. But the applications were always the focus of the projects."</i></div>
+**IU:** And apart from the fact that you need money to finance the people who develop the software, it's also the case that not always a paper comes out of it. How do you see this, how can you value these contributions, or was this valued in the past when Ph.D. students made contributions?
+
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "As I said, the money is only for the research that has come out, that there was some calculation done, a cross-section or a spectrum or something like that. And the actual program development is not valued. I mean, I value it, but not so much from the funding agency's point of view. And this is the point I criticize, that we should be more flexible."</i></div>
+**IU:** This may also have an impact on the career of Ph.D. students if they invest time in it, but it's not counted.
+
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "I had a postdoc who came and said, he didn't want to do programming development, he needed papers for his career. I understood this, then we did some nice things with him. This is how it is. For Ph.D. students, it's easier. A Ph.D. student who has to write a dissertation, but who is not yet thinking about their career at that moment."</i></div>
+**IU:** MCTDH has had some publications that should be cited when using the program. Do you think this is a good way to value these contributions?
+
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "I don't see any other way. It was a long way. Now it's very well-known, and everyone says it's a very good method and knows it and highlights it. But at the beginning, it was difficult. It was foreign to the people. And I know our first really big breakthrough was Pyrazin. [...]</i>
+<div style="padding: 0.5rem; margin-top: 0rem; background-color: #0d2476ff; color: white; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>Pyrazin could be solved in 1999. That's a long time ago. And we thought that was a big breakthrough. But it didn't have much resonance, because we were too far ahead. The others were doing two or three degrees of freedom, and we were doing 24. They didn't quite understand that this was something special. None of the authors were invited to give a talk about it in the following two years or so. Later, our work was very well-recognized. Pyrazin has become a standard model to test other methods. Many semi-classical methods try to solve Pyrazin, yes, this has changed a lot. But this is still very memorable for me, when we solved Pyrazin, we thought we would get great applause. Nothing. The recognition came with a delay."</i>
 </div>
+<i>A big breakthrough was the Zundel cation, because this is a real molecule, not a model. With 15 degrees of freedom, this was also better than what others could do at the time. We could analyze and solve it completely. We got a lot of recognition for this. Nowadays, this is no longer a problem. But at the time, it was."</i></div>
 
-### Impact of Open Source
+## The Emergence of a Community
 
-The open-source release had several positive effects:
+**IU:** MCTDH is also used by many researchers who then base their research on the availability and usability of MCTDH. Do you see critical points? Having a user community in the research landscape?
 
-- **Wider adoption**: More research groups could access and use the software
-- **Community contributions**: Users provided feedback, bug reports, and improvements
-- **Educational value**: Students could learn from the well-documented code
-- **Scientific reproducibility**: Results could be verified and reproduced
-
-## Documentation and User Support
-
-Professor Meyer emphasized the importance of comprehensive documentation, which was unusual for scientific software at the time.
-
-<div style="padding: 0.5rem; margin: 1rem 0; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4;">
-<i>"Good documentation was essential because the method was complex. Users needed to understand not just how to run the program, but also the underlying physics and mathematics."</i>
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "No, it's actually very nice. It's clear that people download MCTDH and use it. And then maybe they turn to other problems, that's just the way it is. They don't necessarily make it their whole research life like I did in the last few years, but they have a specific problem and use MCTDH for it. Then they might do something else. Some people stay with it, use MCTDH continuously for almost all their things. This is different. I sometimes get an email from a student, maybe from China or something, who wants to use MCTDH. Then I have big doubts that this will become something. If someone wants to do it alone, it's too complex, if they don't have an environment. If the professor says, 'Do this,' then the student has to be very good, that's it. Then I never hear from them again. You need an environment to have someone from the quantum chemistry community come and say, 'Now we're going to do dynamics.' This is a different way of thinking, the time dependence. I always find that this is difficult for people. They think very much in eigenstates and now they have to think in wave packets. If someone is a lone wolf, it's difficult. You need a certain environment and support, then it can work. We also have an MCTDH Summer School. And last time, one of the students criticized MCTDH, saying it's too complex. This is not true, quantum dynamics is complex. MCTDH tries to make it as simple as possible. But quantum dynamics is complex. You have to get involved."</i>
+<div style="padding: 0.5rem; margin-top: 0rem; background-color: #0d2476ff; color: white; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>Even if the MCTDH project has taken the programming off your hands, the intellectual effort of dealing with it, this can't be taken away from you. You have to bring this."</i></div>
 </div>
+**IU:** So the users have to understand what's happening, what they can apply it to, and a simple documentation isn't enough. You have to get involved in the method, in the papers. But then there may be questions in the application, e.g. "How do I write the operator file now?"? You certainly get many user inquiries.
 
-The MCTDH package includes:
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "I sometimes get an input and then I pull my hair out. But overall, it's not that complicated, even the operator file. We have an extra ASCII file where you can write in how the operator looks, how the Hamiltonian should look. This can be defined quite well through the sum-of-products structure. There is a whole library of operators that you can then include. First derivative, second derivative, some functions, etc. This can be learned quite well. If you write the input file, you have to have a certain understanding, e.g. how a basis works. Sometimes something doesn't work because, e.g., the grid points are too coarse. Then nothing can work. This is not a MCTDH error, but a real input error. I sometimes get inquiries and an input file, then I try to help."</i></div>
+**IU:** This costs you time again.
 
-- Detailed user manual with theoretical background
-- Practical examples and tutorials
-- Input file documentation
-- Troubleshooting guides
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "This costs me time again, but I'm retired and have the time."</i></div>
+**IU:** Therefore, these users can really be happy. Because it's difficult to find the time and provide support. In principle, you can't even finance this through research projects.
 
-## Collaboration and Community
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "Exactly. This is again that point we've already discussed. That the DFG maybe changes its policy a bit."</i></div>
+**IU:** Of course, the method is very widely used and applied. You've already mentioned that the users don't really work on the program itself.
 
-**Inga Ulusoy:** How did collaboration work in the early days without modern communication tools?
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "Only Markus Schröder and I are mainly responsible for the program itself."</i></div>
+**IU:** But then there are compilers that change, hardware changes.
 
-Collaboration in the pre-internet era required different approaches:
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "Exactly. From the outside, there are always needs. But these are minor things. A new compiler comes, and suddenly it doesn't work. Then you have to find the command that turns off the new additional check. And then it compiles again. And things like this, minor things happen all the time."</i></div>
+**IU:** If you think about the programming language itself, Fortran, which was very widely used, especially in chemistry and theoretical physics for these problems. But today not so much.
 
-- **Personal meetings**: Much communication happened at conferences and workshops
-- **Postal mail**: Code and documentation were shared via physical mail
-- **Phone calls**: Important discussions happened over long-distance calls
-- **Visiting exchanges**: Researchers spent weeks or months at other institutions
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "Fortran is, I think, the best language for number crunching. And of course, the modern language is C++, which can do much more, but you don't need this much in our case. At least not when you're doing things like we are. C++ has a big advantage. Many people are now starting with Python. And you can mix it, of course. Python is wonderful, it's very simple, it's very powerful, but unfortunately, it's very slow. You could now write programs where the entire input and everything is on Python and then the number crunching is outsourced to a higher language. And then C++ is better, because it has the same data structure as Python. And this would be a bit more complicated with Fortran. This is a bit unfortunate that the Python people are orienting themselves towards C++ and not towards Fortran. In this regard, it could be good that the future is strongly in the direction of mixing Python and C++."</i></div>
+**IU:** But Fortran has contributed a lot to the field of quantum dynamics or quantum mechanics.
 
-<div style="padding: 0.5rem; margin: 1rem 0; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4;">
-<i>"Collaboration was more intensive but slower. When we met, we had to make the most of the time because the next opportunity might not come for months."</i>
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "Yes, very much. There is a lot of software written in Fortran. And with 90 and the higher 2003 and what's available now, Fortran has also become much stronger. It's much more flexible and can do much more. I'm happy with Fortran. But this is up to each individual to decide. I'm maybe also stuck in tradition. I grew up with Fortran. That's just the way it is."</i></div>
+**IU:** Are there plans in the near future, apart from the Summer School, with MCTDH?
+
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "No, we will continue to study as large systems as possible, as far as we can. We have a tradition in our group, led by Oriol Vendrell, of investigating protonated water clusters. The last and largest water cluster we investigated was the extended Zundel cation, which has 51 degrees of freedom. This is already quite large. And in this direction, we will certainly continue. We are calculating the absorption spectra of the clusters. This is the application. And from the program development, I don't see anything spectacular at the moment, but this can come. If we encounter a problem that requires a new additional development, then we will also do this, as far as possible."</i>
+<div style="padding: 0.5rem; margin-top: 0rem; background-color: #0d2476ff; color: white; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>We are always problem-driven. We get a problem, and we try to solve it."</i></div>
 </div>
+**IU:** Yes, then thank you for the conversation.
 
-## Evolution of the Software
-
-Over the decades, MCTDH has continuously evolved:
-
-### Early Versions (1990s)
-- Basic MCTDH implementation
-- Fortran 77 codebase
-- Limited to small systems
-
-### Modern Versions (2000s-present)
-- Extended capabilities (ML-MCTDH, G-MCTDH)
-- Modern Fortran standards
-- Parallel computing support
-- Integration with other software packages
-
-## Challenges in Research Software Development
-
-Professor Meyer identified several persistent challenges in research software development:
-
-### Funding Issues
-
-<div style="padding: 0.5rem; margin: 1rem 0; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4;">
-<i>"Funding agencies often don't understand that software development is research. They want to fund new physics, not the tools needed to discover that physics."</i>
-</div>
-
-### Maintenance and Sustainability
-
-Keeping research software current and functional requires ongoing effort:
-
-- **Code maintenance**: Adapting to new compilers and systems
-- **User support**: Helping users with problems and questions
-- **Feature development**: Adding new capabilities based on scientific needs
-- **Documentation updates**: Keeping manuals current with code changes
-
-## Advice for Modern RSEs
-
-**Inga Ulusoy:** What advice would you give to today's research software engineers?
-
-Professor Meyer offered several insights:
-
-### Focus on Quality
-
-<div style="padding: 0.5rem; margin: 1rem 0; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4;">
-<i>"Take time to write good code and good documentation. It may seem slower initially, but it saves enormous time in the long run."</i>
-</div>
-
-### Understand the Science
-
-Technical skills alone are not sufficient:
-
-- **Learn the domain**: Understand the physics or chemistry behind the code
-- **Collaborate with scientists**: Work closely with domain experts
-- **Stay current**: Keep up with both computational and scientific developments
-
-### Plan for Longevity
-
-<div style="padding: 0.5rem; margin: 1rem 0; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4;">
-<i>"Think about who will maintain your software in 10 or 20 years. Write code that others can understand and modify."</i>
-</div>
-
-## The Future of MCTDH
-
-Today, MCTDH continues to be actively developed and used worldwide. The software has evolved to include machine learning methods and can handle increasingly complex systems.
-
-<div style="padding: 0.5rem; margin: 1rem 0; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4;">
-<i>"The main development now is focused on Markus Schröder and myself. But the user community continues to grow, and we see applications in areas we never imagined when we started."</i>
-</div>
+<div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
+<i>HDM: "Thank you for the conversation, it was nice. Thank you. And I hope it will help to attract more MCTDH users."</i></div>
+**IU:** Yes, certainly.
 
 ## Key Topics Covered
 
@@ -435,7 +467,7 @@ Today, MCTDH continues to be actively developed and used worldwide. The software
 ## Full Interview Resources
 
 ### Complete Transcript
-**[Read Full German Interview Transcript](/assets/data/InterviewCorrected_5.6.25.markdown)**
+**[Read Full Interview Transcript (German)](/interview-hd-meyer-full/)**
 
 ### Audio Interview
 
@@ -448,8 +480,8 @@ Today, MCTDH continues to be actively developed and used worldwide. The software
   </div>
   
   <div class="audio-links">
-    <a href="https://www.buzzsprout.com/2531619/episodes/17727894" target="_blank" rel="noopener noreferrer" class="audio-button">
-      🎧 Listen on Buzzsprout
+    <a href="https://shows.acast.com/rse-pioneers/episodes/68d0ff2f146cfd1a6552805e" target="_blank" rel="noopener noreferrer" class="audio-button">
+      🎧 Listen on Acast
     </a>
   </div>
   
@@ -460,19 +492,34 @@ Today, MCTDH continues to be actively developed and used worldwide. The software
 
 ### Related Images
 
-<div class="gallery">
-  <div class="gallery-item">
-    <a href="https://www.pci.uni-heidelberg.de/tc/dieter.html" target="_blank" rel="noopener noreferrer">
-      <img src="{{ '/assets/images/dieter.png' | relative_url }}" alt="Professor Hans-Dieter Meyer" title="Professor Hans-Dieter Meyer">
-    </a>
-  </div>
-  <div class="gallery-item">
-    <a href="https://www.pci.uni-heidelberg.de/tc/mctdh.html" target="_blank" rel="noopener noreferrer">
-      <img src="{{ '/assets/images/MCTDH.png' | relative_url }}" alt="MCTDH stats" title="MCTDH package tech stats">
-    </a>
-  </div>
-</div>
+{% include gallery caption="*Images from Professor Meyer's career and the MCTDH project.*" %}
 
+**MCTHD authors**: Michael Beck, Andreas Jäckle, Graham Worth, Hans-Dieter Meyer  
+**MCTDH Contributors**: Marie-Catherine Heitz, Stephan Wefing, Uwe Manthe, Suren Sukiasyan, Andreas Raab, Masahiro Ehara, Christoph Cattarius, Fabien Gatti, Frank Otto, Mathias Nest, Michael R. Brill, Oriol Vendrell, Markus Schröder, Daniel Pelaez-Ruiz, Phillip S. Thomas, Ying-Chih Chiang, Keyvan Sadri, David Mendive-Tapia
+
+### Related links
+Es finden regelmäßig [Workshops und Lehrveranstaltungen zu MCTDH][MCTDH-summer-school] statt. Darüberhinaus entstand die ["High-Dimensional Quantum Dynamics" Konferenzreihe][HDQD-conferences], und es gibt weitere (variierte) Implementierungen des MCTDH Algorithmus in anderen Programmen (Uwe Manthe (Bielefeld), Graham Worth (University College London, [“Quantics”][Quantics]), Haobin Wang (Denver)). 
+
+- [**MCTDH**: "The Heidelberg MCTDH program package" - http://mctdh.uni-hd.de/][MCTDH]
+- [**MCTDH references**: "References for the Heidelberg MCTDH program package" http://mctdh.uni-hd.de/][MCTDH-refs]
+- [**MCTDH book**: "H.-D. Meyer, F. Gatti, and G. A. Worth, Eds., Multidimensional Quantum Dynamics: MCTDH Theory and Applications, Wiley-VCH, Weinheim, 2009, ISBN  978-3-527-32018-9" - https://www.wiley-vch.de/de/fachgebiete/naturwissenschaften/multidimensional-quantum-dynamics-978-3-527-32018-9][MCTDH-book]
+- [**MCTDH Summer School**: "MCTDH Summer School" - https://www.mctdh-school.uni-heidelberg.de/][MCTDH-summer-school]
+- [**HDQD conferences**: "High-dimensional Quantum Dynamics Conferences" https://qdn.cnrs.fr/?page_id=44][HDQD-conferences]
+- [**Quantics**: "The Quantics program package" - https://www2.chem.ucl.ac.uk/worthgrp/quantics/doc/index.html][Quantics]
+
+[MCTDH]: http://mctdh.uni-hd.de/ "The Heidelberg MCTDH program package"
+[MCTDH-refs]: http://mctdh.uni-hd.de/ "References for the Heidelberg MCTDH program package"
+[MCTDH-book]: https://www.wiley-vch.de/de/fachgebiete/naturwissenschaften/multidimensional-quantum-dynamics-978-3-527-32018-9 "H.-D. Meyer, F. Gatti, and G. A. Worth, Eds., Multidimensional Quantum Dynamics: MCTDH Theory and Applications, Wiley-VCH, Weinheim, 2009, ISBN  978-3-527-32018-9"
+[MCTDH-summer-school]: https://www.mctdh-school.uni-heidelberg.de/ "MCTDH Summer School"
+[HDQD-conferences]: https://qdn.cnrs.fr/?page_id=44 "High-dimensional Quantum Dynamics Conferences"
+[Quantics]: https://www2.chem.ucl.ac.uk/worthgrp/quantics/doc/index.html "The Quantics program package"
+[MCTDH-highlight]: https://doi.org/10.1002/cphc.201600662 "The Importance of Vibronic Coupling for Efficient Reverse Intersystem Crossing in Thermally Activated Delayed Fluorescence Molecules"
 ---
 
-*This interview is part of the RSE Pioneers project, documenting the stories and contributions of early research software engineers in theoretical chemistry and related fields.*
+*This interview is part of the RSE Pioneers project, documenting the contributions of early research software engineers who laid the foundation for modern computational research.*
+
+**Interview Details:**
+- **Date:** May 8, 2025
+- **Duration:** 60 minutes
+- **Language:** German
+- **Location:** Heidelberg
