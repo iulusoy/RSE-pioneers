@@ -83,8 +83,8 @@ toc_sticky: true
   /* Keep sidebar on the left - positioned to not block content */
   .sidebar {
     position: absolute !important;
-    left: 0 !important;
-    top: 0 !important;
+    left: auto !important;
+    top: auto !important;
     width: 250px !important;
     max-width: 250px !important;
     margin-left: 0 !important;
@@ -237,6 +237,24 @@ h1 .header-link {
     font-style: italic;
     margin: 0;
 }
+.mm-labels {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+.mm-label {
+  font-size: 0.95em;
+  font-weight: 500;
+}
+.mm-category {
+  background: #0d2476ff;
+  color: #fff;
+}
+.mm-tag {
+  background: #e9ecef;
+  color: #0d2476ff;
+}
 </style>
 
 <!-- Place this after the front matter and before your main content -->
@@ -259,7 +277,7 @@ h1 .header-link {
 {% endif %}
 
   <div style="margin: 20px 0;">
-    <a href="/interview/2025/08/25/Hans-Dieter-Meyer" class="audio-button" style="display: inline-block; background: #0d2476ff; color: white !important; padding: 12px 24px; text-decoration: none !important; border-radius: 8px; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(13, 36, 118, 0.3);">
+    <a href="{{ site.baseurl }}/interview/2025/08/25/Hans-Dieter-Meyer/" class="audio-button" style="display: inline-block; background: #0d2476ff; color: white !important; padding: 12px 24px; text-decoration: none !important; border-radius: 8px; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(13, 36, 118, 0.3);">
       🇩🇪 Read German Interview (original language)
     </a>
   </div>
