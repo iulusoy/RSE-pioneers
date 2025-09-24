@@ -277,7 +277,7 @@ h1 .header-link {
 {% endif %}
 
   <div style="margin: 20px 0;">
-    <a href="{{ site.baseurl }}/interview/2025/08/25/Hans-Dieter-Meyer/" class="audio-button" style="display: inline-block; background: #0d2476ff; color: white !important; padding: 12px 24px; text-decoration: none !important; border-radius: 8px; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(13, 36, 118, 0.3);">
+    <a href="{{ site.baseurl }}/interview/2025/08/25/Hans-Dieter-Meyer.html" class="audio-button" style="display: inline-block; background: #0d2476ff; color: white !important; padding: 12px 24px; text-decoration: none !important; border-radius: 8px; font-weight: bold; transition: all 0.3s ease; box-shadow: 0 2px 8px rgba(13, 36, 118, 0.3);">
       🇩🇪 Read German Interview (original language)
     </a>
   </div>
