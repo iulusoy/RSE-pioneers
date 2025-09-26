@@ -9,7 +9,7 @@ header:
     - label: "<i class='fas fa-play'></i> Listen to Interviews"
       url: "https://shows.acast.com/rse-pioneers"
 excerpt: >
-  How did the first RSEs advance science, and what factors determined success, adoption and impact of research software? These are central questions that RSE pioneers addresses.
+  How did the first RSEs advance science, and what are the factors that determined the success, adoption and impact of the developed research software? RSE Pioneers addresses these central questions.
 feature_row:
   - image_path: /assets/images/dieter.jpg
     alt: "Hans-Dieter Meyer"
@@ -28,7 +28,7 @@ feature_row:
   - image_path: /assets/images/RSE-pioneer.png
     alt: "About the Project"
     title: "About RSE Pioneers"
-    excerpt: "Learn more about the RSE pioneers project."
+    excerpt: "Learn more about the RSE Pioneers project."
     url: "/about/"
     btn_class: "btn--primary"
     btn_label: "Learn More"

@@ -4,19 +4,19 @@ title: About the project
 permalink: /about/
 ---
 
-## RSE Pioneers
+## RSE pioneers
 
-RSE pioneers are the early adopters of research software in the research process, that fundamentally aided the community by providing access to research software. By providing this access and the developed research software as an infrastructure, RSE pioneers fundamentally advanced not only their own scientific pursuits, but also enabled a multitude of indirect research achievements by other researchers using the developed tools.
+RSE pioneers are the early adopters of research software in the research process, fundamentally aiding the community by providing access to the software. By providing this access and the developed research software as an infrastructure, RSE pioneers fundamentally advanced not only their own scientific pursuits, but also enabled a multitude of indirect research achievements by other researchers using the developed tools.
 
 ## The aim of this project
 
-Research software engineers historically often remained in the background, investing substantial time into the development and maintenance of research software. With this series, we want to highlight the contributions of those researchers, showcase what they fundamentally enabled, and shed light onto successes and hurdles in the history of research software engineering.
+Research software engineers have historically remained in the background, investing substantial time in developing and maintaining research software. With this series, we want to highlight the contributions of those researchers and shed light onto successes and hurdles in the history of research software engineering.
 
 ## What is Research Software Engineering?
 
-Research Software Engineering (RSE) is a relatively new field that combines domain research with software development skills. Research software engineers develop, maintain, and extend the software that underpins research across all disciplines. In some disciplines, research software engineering has existed longer than in others - the pioneers in this series.
+Research Software Engineering (RSE) is a relatively new field that combines domain research with software development skills. Research software engineers develop, maintain, and extend the software that underpins research across all disciplines. In some disciplines, research software engineering has emerged earlier than in others - the research software engineers driving the innovation in those fields are the pioneers in this series.
 
-## The Pioneers
+## The pioneers
 
 Our featured pioneers are researchers who:
 - Developed fundamental algorithms and methods
