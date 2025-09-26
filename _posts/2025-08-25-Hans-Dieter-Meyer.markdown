@@ -305,7 +305,7 @@ Anfang der 90er Jahre begann dann die Arbeit an MCTDH mit der Entwicklung der Me
 <div style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 0.375rem; padding: 1rem; margin: 1rem 0; font-size: 0.9rem;">
 <strong>🎧 Diesen Abschnitt als Audio hören:</strong>
 <audio controls style="width: 100%; margin: 0.5rem 0 0 0;">
-  <source src="{{ '/assets/audio/part1_open_source.wav' | relative_url }}" type="audio/wav">
+  <source src="{{ '/assets/audio/part1_open_source.mp3' | relative_url }}" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
 </div>
@@ -317,7 +317,7 @@ Nach Erreichen eines höheren Reifegrades der Software war die Freigabe an die �
 <div style="padding: 0.5rem; margin-top: 0rem; background-color: #0d2476ff; color: white; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
 <i>Nur dadurch, dass wir das Open Source gemacht haben und den anderen zugänglich gemacht haben und das Programm auch so geschrieben haben, dass es für Leute, die nicht so ganz tief drin sind, wirklich nutzbar ist, hat MCTDH die Verbreitung erfahren.</i> 
 <audio controls style="width: 100%; margin: 0.5rem 0 0 0;">
-  <source src="{{ '/assets/audio/soundbyte1_open_source.wav' | relative_url }}" type="audio/wav">
+  <source src="{{ '/assets/audio/soundbyte1_open_source.mp3' | relative_url }}" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
 </div>
@@ -329,7 +329,7 @@ Nach Erreichen eines höheren Reifegrades der Software war die Freigabe an die �
 <div style="padding: 0.5rem; margin-top: -1rem; background-color: #c8d1efff; color: black; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
 <i>HDM: "Diese Bedenken hatten wir vielleicht auch, aber das ist altes Denken. Man sollte die Programme freigeben, damit sie nutzbar sind. Es macht ja keinen Sinn, dass jeder das Rad immer neu erfindet und ähnliche Programme schreibt. Das wird deutlich, wenn man an solche Bibliotheken wie LAPACK denkt. Das haben Leute geschrieben, die haben sich die Mühe gemacht und werden jetzt acknowledged und zitiert, aber wenn man das nicht freigegeben hätte, so dass nur die eigene Universität diese schönen Programme nutzen kann, das hätte ja nicht so viel Sinn gegeben. Ich glaube, da renne ich inzwischen offene Türen ein. Das war zu der Zeit, als wir uns in den 90er-Jahren entschieden haben, anders. Ich glaube, die Leute sehen mittlerweile ein, man sollte die Sachen öffentlich machen."</i> 
 <audio controls style="width: 100%; margin: 0.5rem 0 0 0;">
-  <source src="{{ '/assets/audio/soundbyte2_open_source2.wav' | relative_url }}" type="audio/wav">
+  <source src="{{ '/assets/audio/soundbyte2_open_source2.mp3' | relative_url }}" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
 </div>
@@ -339,7 +339,7 @@ Nach Erreichen eines höheren Reifegrades der Software war die Freigabe an die �
 <div style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 0.375rem; padding: 1rem; margin: 1rem 0; font-size: 0.9rem;">
 <strong>🎧 Diesen Abschnitt als Audio hören:</strong>
 <audio controls style="width: 100%; margin: 0.5rem 0 0 0;">
-  <source src="{{ '/assets/audio/part2_RSE_practices.wav' | relative_url }}" type="audio/wav">
+  <source src="{{ '/assets/audio/part2_RSE_practices.mp3' | relative_url }}" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
 </div>
@@ -351,7 +351,7 @@ Nach Erreichen eines höheren Reifegrades der Software war die Freigabe an die �
 <div style="padding: 0.5rem; margin-top: 0rem; background-color: #0d2476ff; color: white; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
 <i>Es ist ja so, dass man immer größere Systeme lösen kann. Das liegt natürlich daran, dass die Computer immer leistungsfähiger werden. Das ist enorm, was in den letzten 20 Jahren passiert ist. Aber es liegt auch an den Algorithmen. Die Algorithmen sind sehr viel besser geworden. Man muss an beiden arbeiten, man kann nicht einfach da sitzen und warten, dass die nächste Computergeneration groß genug ist, um die Probleme zu lösen. Man muss die Algorithmen entsprechend entwickeln und erfinden, und da sind enorme Beiträge geleistet worden. MCTDH hat da selber einen großen Beitrag geleistet.</i>
 <audio controls style="width: 100%; margin: 0.5rem 0 0 0;">
-  <source src="{{ '/assets/audio/soundbyte3_algorithms.wav' | relative_url }}" type="audio/wav">
+  <source src="{{ '/assets/audio/soundbyte3_algorithms.mp3' | relative_url }}" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
 </div>
@@ -390,7 +390,7 @@ Nach Erreichen eines höheren Reifegrades der Software war die Freigabe an die �
 <i> Wenn man das öffentlich machen will, muss man auch eine gute Dokumentation schreiben. Und das ist lästig, das macht keinem so richtig viel Spaß. Programmieren macht oft Spaß, aber Dokumentation schreiben etwas weniger. Aber das ist unglaublich wichtig. 
 </i>
 <audio controls style="width: 100%; margin: 0.5rem 0 0 0;">
-  <source src="{{ '/assets/audio/soundbyte4_documentation.wav' | relative_url }}" type="audio/wav">
+  <source src="{{ '/assets/audio/soundbyte4_documentation.mp3' | relative_url }}" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
 </div>
@@ -406,7 +406,7 @@ Gerade wenn es dann so komplex wird wie MCTDH. Ich gucke selber in die Dokumenta
 <div style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 0.375rem; padding: 1rem; margin: 1rem 0; font-size: 0.9rem;">
 <strong>🎧 Diesen Abschnitt als Audio hören:</strong>
 <audio controls style="width: 100%; margin: 0.5rem 0 0 0;">
-  <source src="{{ '/assets/audio/part3_MCTDH_breakthroughs.wav' | relative_url }}" type="audio/wav">
+  <source src="{{ '/assets/audio/part3_MCTDH_breakthroughs.mp3' | relative_url }}" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
 </div>
@@ -425,7 +425,7 @@ Ein anderer wichtiger Punkt, wiederum nicht direkt MCTDH aber für MCTDH sehr wi
 <div style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 0.375rem; padding: 1rem; margin: 1rem 0; font-size: 0.9rem;">
 <strong>🎧 Diesen Abschnitt als Audio hören:</strong>
 <audio controls style="width: 100%; margin: 0.5rem 0 0 0;">
-  <source src="{{ '/assets/audio/part4_academic_environment.wav' | relative_url }}" type="audio/wav">
+  <source src="{{ '/assets/audio/part4_academic_environment.mp3' | relative_url }}" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
 </div>
@@ -447,7 +447,7 @@ Ein anderer wichtiger Punkt, wiederum nicht direkt MCTDH aber für MCTDH sehr wi
 <div style="padding: 0.5rem; margin-top: 0rem; background-color: #0d2476ff; color: white; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
 <i>Das Pyrazin konnten wir 1999 lösen. Das ist lange her. Und wir hatten gedacht, das ist so ein großer Durchbruch. Aber es hat relativ wenig Resonanz ergeben, denn wir waren einfach zu weit vorne. Die anderen Leute machten zwei oder drei Freiheitsgrade, und wir machten 24. Das haben die nicht so ganz richtig verstanden, gedacht das ist sowas ganz Spezielles. Von den Autoren ist niemand eingeladen worden, mal zu einem Vortrag darüber, in den folgenden zwei Jahren oder so. Später ist unsere Arbeit sehr anerkannt worden. Pyrazin ist ein Standardmodell geworden, um andere Methoden zu testen. Viele semi-klassische Methoden versuchen Pyrazin zu lösen, ja, das hat sich stark geändert. Aber das ist mir immer noch sehr in Erinnerung, als wir Pyrazin gelöst haben, hatten wir gedacht haben, jetzt kriegen wir großen Applaus. Nichts. Die Anerkennung kam mit Verzögerung. </i>
 <audio controls style="width: 100%; margin: 0.5rem 0 0 0;">
-  <source src="{{ '/assets/audio/soundbyte5_breakthrough.wav' | relative_url }}" type="audio/wav">
+  <source src="{{ '/assets/audio/soundbyte5_breakthrough.mp3' | relative_url }}" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
 </div>
@@ -462,7 +462,7 @@ Ein anderer wichtiger Punkt, wiederum nicht direkt MCTDH aber für MCTDH sehr wi
 <div style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 0.375rem; padding: 1rem; margin: 1rem 0; font-size: 0.9rem;">
 <strong>🎧 Diesen Abschnitt als Audio hören:</strong>
 <audio controls style="width: 100%; margin: 0.5rem 0 0 0;">
-  <source src="{{ '/assets/audio/part5_community.wav' | relative_url }}" type="audio/wav">
+  <source src="{{ '/assets/audio/part5_community.mp3' | relative_url }}" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
 </div>
@@ -472,7 +472,7 @@ Ein anderer wichtiger Punkt, wiederum nicht direkt MCTDH aber für MCTDH sehr wi
 <div style="padding: 0.5rem; margin-top: 0rem; background-color: #0d2476ff; color: white; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
 <i> Auch wenn einem durch das MCTDH-Projekt die Programmierung abgenommen worden ist, die intellektuelle Leistung, sich mit dem wissenschaftlichen Problem und seiner numerischen Umsetzung zu beschäftigen, die kann einem niemand abnehmen. Die muss man dann bringen."</i></div>
 <audio controls style="width: 100%; margin: 0.5rem 0 0 0;">
-  <source src="{{ '/assets/audio/soundbyte6_understanding.wav' | relative_url }}" type="audio/wav">
+  <source src="{{ '/assets/audio/soundbyte6_understanding.mp3' | relative_url }}" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
 </div>
@@ -508,7 +508,7 @@ Ein anderer wichtiger Punkt, wiederum nicht direkt MCTDH aber für MCTDH sehr wi
 <div style="background-color: #f8f9fa; border: 1px solid #dee2e6; border-radius: 0.375rem; padding: 1rem; margin: 1rem 0; font-size: 0.9rem;">
 <strong>🎧 Diesen Abschnitt als Audio hören:</strong>
 <audio controls style="width: 100%; margin: 0.5rem 0 0 0;">
-  <source src="{{ '/assets/audio/part6_future.wav' | relative_url }}" type="audio/wav">
+  <source src="{{ '/assets/audio/part6_future.mp3' | relative_url }}" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
 </div>
@@ -533,7 +533,7 @@ Ein anderer wichtiger Punkt, wiederum nicht direkt MCTDH aber für MCTDH sehr wi
 <div style="padding: 0.5rem; margin-top: 0rem; background-color: #0d2476ff; color: white; border-radius: 0.375rem; font-size: 1.1rem; line-height: 1.4; text-align: block;">
 <i>Wenn wir auf ein Problem stoßen für das wir eine neue zusätzliche Entwicklung brauchen, dann würde man die auch leisten, so weit es möglich ist. Man ist ja immer problem-driven. Man bekommt ein Problem, man setzt sich ja nicht hin und denkt sich etwas Großartiges aus, sondern die Probleme kommen und man versucht sie zu lösen."</i></div>
 <audio controls style="width: 100%; margin: 0.5rem 0 0 0;">
-  <source src="{{ '/assets/audio/soundbyte7_motivation.wav' | relative_url }}" type="audio/wav">
+  <source src="{{ '/assets/audio/soundbyte7_motivation.mp3' | relative_url }}" type="audio/mp3">
   Your browser does not support the audio element.
 </audio>
 </div>
