@@ -24,8 +24,8 @@ gallery:
     title: "MCTDH Software Interface"
   - url: /assets/images/MCTDH-ship.jpg
     image_path: /assets/images/MCTDH-ship.jpg
-    alt: "The MCTDH ship, steered by Dieter. Non-smokers clearly achieve better scientific results than do people who smoke. While Oriol is on the lookout, Frank Otto is busy programming."
-    title: "The MCTDH ship, steered by Dieter. Non-smokers clearly achieve better scientific results than do people who smoke. While Oriol is on the lookout, Frank Otto is busy programming."
+    alt: "The MCTDH ship, steered by Dieter. Non-smokers clearly achieve better scientific results than do people who smoke. While Oriol is on the lookout, Frank Otto is busy programming. This artwork was created by Prof. Shirin Faraji for Dieter on the occasion of his 60th birthday."
+    title: "The MCTDH ship, steered by Dieter. Non-smokers clearly achieve better scientific results than do people who smoke. While Oriol is on the lookout, Frank Otto is busy programming. This artwork was created by Prof. Shirin Faraji for Dieter on the occasion of his 60th birthday."
   - url: https://www.pci.uni-heidelberg.de/tc/index.html
     image_path: /assets/images/uni-hd-logo.png
     alt: "Theoretical Chemistry group at Heidelberg University"
