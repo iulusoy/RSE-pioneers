@@ -2,7 +2,7 @@ title: RSE Pioneers
 description: >- # this means to ignore newlines until "baseurl:"
   The website hosting the RSE pioneers project.
 url: "" # the base hostname & protocol for your site, e.g. http://example.com
-github_username:  iulusoy
+github_username:  ssciwr
 
 # Build settings
 remote_theme: mmistakes/minimal-mistakes
@@ -21,7 +21,7 @@ footer:
   links:
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/iulusoy/RSE-pioneers"
+      url: "https://github.com/ssciwr/RSE-pioneers"
     - label: "Podcast"
       icon: "fas fa-fw fa-podcast"
       url: "https://shows.acast.com/rse-pioneers"
@@ -42,7 +42,7 @@ author:
       # url: "https://your-website.com"
     - label: "GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/iulusoy"
+      url: "https://github.com/ssciwr"
     - label: "Acast Podcast"
       icon: "fas fa-fw fa-podcast"
       url: "https://shows.acast.com/rse-pioneers"
