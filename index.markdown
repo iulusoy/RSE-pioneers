@@ -170,4 +170,4 @@ hr,
 
 The RSE Pioneers project is created and maintained by researchers at the Scientific Software Center, Heidelberg University. We document the stories and contributions of early research software engineers.
 
-**Contact:** For questions about the project or to suggest interview subjects, please reach out via [GitHub](https://github.com/iulusoy/RSE-pioneers/issues).
+**Contact:** For questions about the project or to suggest interview subjects, please reach out via [GitHub](https://github.com/ssciwr/RSE-pioneers/issues).
